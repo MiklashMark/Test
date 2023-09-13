@@ -1,4 +1,4 @@
-package org.example;
+package org.example.servletsTest;
 
 import jakarta.servlet.ServletException;
 import jakarta.servlet.annotation.WebServlet;
@@ -8,6 +8,7 @@ import jakarta.servlet.http.HttpServletResponse;
 
 import java.io.IOException;
 import java.util.Arrays;
+import java.util.Map;
 
 @WebServlet("/fifthServlet")
 public class FifthServlet extends HttpServlet {
@@ -19,9 +20,12 @@ public class FifthServlet extends HttpServlet {
 
         var print = resp.getWriter();
 
-        String[] parametersNames = req.getParameterMap().get(parameterName);
-        print.println(Arrays.toString(parametersNames));
+        String[] parameters = req.getParameterMap().get(parameterName);
 
-
+        if (parameters != null) {
+            for (String s : parameters) {
+                print.println(s);
+            }
+        }
     }
 }

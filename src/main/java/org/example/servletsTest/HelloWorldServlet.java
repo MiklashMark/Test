@@ -1,4 +1,4 @@
-package org.example;
+package org.example.servletsTest;
 
 import jakarta.servlet.ServletException;
 import jakarta.servlet.http.HttpServlet;

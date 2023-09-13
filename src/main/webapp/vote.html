@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>Голосование</h1>
+
+<form method="POST" action="http://localhost:8080/WebApp-1.1.1-SNAPSHOT/vote">
+    <p>Выберите лучшего исполнителя:</p>
+    <label>
+        <input type="radio" name="bestArtist" value="Queen"> Queen
+    </label>
+    <br>
+    <label>
+        <input type="radio" name="bestArtist" value="KINO"> Кино
+    </label>
+    <br>
+    <label>
+        <input type="radio" name="bestArtist" value="Valentin Strykalo"> Валентин Стрыкало
+    </label>
+    <br>
+    <label>
+        <input type="radio" name="bestArtist" value="RadioHead"> RadioHead
+    </label>
+    <br>
+
+
+    <p>Выберите жанр:</p>
+    <label>
+        <input type="checkbox" name="genre" value="rock"> Рок
+    </label>
+    <br>
+    <label>
+        <input type="checkbox" name="genre" value="pop"> Поп
+    </label>
+    <br>
+    <label>
+        <input type="checkbox" name="genre" value="hipHop"> Хип-хоп
+    </label>
+    <br>
+    <label>
+        <input type="checkbox" name="genre" value="electronic"> Электроника
+    </label>
+    <br>
+    <label>
+        <input type="checkbox" name="genre" value="jazz"> Джаз
+    </label>
+    <br>
+    <label>
+        <input type="checkbox" name="genre" value="blues"> Блюз
+    </label>
+    <br>
+    <label>
+        <input type="checkbox" name="genre" value="country"> Кантри
+    </label>
+    <br>
+    <label>
+        <input type="checkbox" name="genre" value="reggae"> Регги
+    </label>
+    <br>
+    <label>
+        <input type="checkbox" name="genre" value="classical"> Классика
+    </label>
+    <br>
+
+    <p>Расскажите о себе:</p>
+    <label>
+        <textarea name="aboutMe" rows="4" cols="50"></textarea>
+    </label>
+    <br>
+
+    <input type="submit" value="Проголосовать">
+</form>
+</body>
+</html>
