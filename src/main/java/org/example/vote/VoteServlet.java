@@ -16,20 +16,7 @@ public class VoteServlet extends HttpServlet {
 
     @Override
     public void init() {
-        statistics.getArtistsVotesMap().put("Queen", 0);
-        statistics.getArtistsVotesMap().put("KINO", 0);
-        statistics.getArtistsVotesMap().put("Valentin Strykalo", 0);
-        statistics.getArtistsVotesMap().put("RadioHead", 0);
 
-        statistics.getGenresVotesMap().put("rock", 0);
-        statistics.getGenresVotesMap().put("pop", 0);
-        statistics.getGenresVotesMap().put("hipHop", 0);
-        statistics.getGenresVotesMap().put("electronic", 0);
-        statistics.getGenresVotesMap().put("jazz", 0);
-        statistics.getGenresVotesMap().put("blues", 0);
-        statistics.getGenresVotesMap().put("country", 0);
-        statistics.getGenresVotesMap().put("reggae", 0);
-        statistics.getGenresVotesMap().put("classical", 0);
     }
 
     @Override

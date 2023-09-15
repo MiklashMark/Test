@@ -15,6 +15,23 @@ public class Statistics implements IStatistics {
     private HashMap<String, LocalTime> userInformationMap = new LinkedHashMap<>();
     private int votesNumber;
 
+    public Statistics() {
+        artistsVotesMap.put("Queen", 0);
+        artistsVotesMap.put("KINO", 0);
+        artistsVotesMap.put("Valentin Strykalo", 0);
+        artistsVotesMap.put("RadioHead", 0);
+
+        genresVotesMap.put("rock", 0);
+        genresVotesMap.put("pop", 0);
+        genresVotesMap.put("hipHop", 0);
+        genresVotesMap.put("electronic", 0);
+        genresVotesMap.put("jazz", 0);
+        genresVotesMap.put("blues", 0);
+        genresVotesMap.put("country", 0);
+        genresVotesMap.put("reggae", 0);
+        genresVotesMap.put("classical", 0);
+    }
+
     @Override
     public void addUsersArtistVote(String artistVote) throws FileNotFoundException {
         votesNumber = artistsVotesMap.getOrDefault(artistVote, 0) + 1;
