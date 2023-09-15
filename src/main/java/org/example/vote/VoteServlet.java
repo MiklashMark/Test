@@ -15,11 +15,6 @@ public class VoteServlet extends HttpServlet {
    private Statistics statistics = new Statistics();
 
     @Override
-    public void init() {
-
-    }
-
-    @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws IOException {
         resp.setContentType("text/html");
         resp.setCharacterEncoding("UTF-8");
