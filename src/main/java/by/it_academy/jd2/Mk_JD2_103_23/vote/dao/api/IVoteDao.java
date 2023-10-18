@@ -1,4 +1,4 @@
-package by.it_academy.jd2.Mk_JD2_103_23.vote.service.api;
+package by.it_academy.jd2.Mk_JD2_103_23.vote.dao.api;
 
 import by.it_academy.jd2.Mk_JD2_103_23.vote.core.dto.Artist;
 import by.it_academy.jd2.Mk_JD2_103_23.vote.core.dto.Genre;
@@ -9,7 +9,7 @@ import java.time.LocalDateTime;
 import java.util.List;
 import java.util.Map;
 
-public interface IVoteService {
+public interface IVoteDao {
 
     /**
      * Сохранение голоса

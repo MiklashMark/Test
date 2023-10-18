@@ -6,15 +6,15 @@ import java.util.List;
 public class Vote {
     private Artist artist;
     private List<Genre> genres = new ArrayList<>();
-    private String aboutMe;
+    private String about;
 
     public Vote() {
     }
 
-    public Vote(Artist artist, List<Genre> genres, String aboutMe) {
+    public Vote(Artist artist, List<Genre> genres, String about) {
         this.artist = artist;
         this.genres = genres;
-        this.aboutMe = aboutMe;
+        this.about = about;
     }
 
     public Artist getArtist() {
@@ -29,16 +29,16 @@ public class Vote {
         return genres;
     }
 
-    public void addGenres(Genre genres) {
-        this.genres.add(genres);
+    public void addGenre(Genre genre) {
+        this.genres.add(genre);
     }
 
-    public String getAboutMe() {
-        return aboutMe;
+    public String getAbout() {
+        return about;
     }
 
-    public void setAboutMe(String aboutMe) {
-        this.aboutMe = aboutMe;
+    public void setAbout(String about) {
+        this.about = about;
     }
 
     @Override
@@ -46,7 +46,7 @@ public class Vote {
         return "Vote{" +
                 "artist=" + artist +
                 ", genres=" + genres +
-                ", aboutMe='" + aboutMe + '\'' +
+                ", about='" + about + '\'' +
                 '}';
     }
 }
